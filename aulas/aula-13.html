@@ -1,0 +1,151 @@
+<section class="view" id="v-aula-13" data-aula="13" data-tempo="13min">
+<div class="aula">
+<header class="a-hero">
+  <p class="kicker">Módulo 3 · Aula 1 de 6</p>
+  <h1>O terminal começa dizendo <em>onde você está</em></h1>
+  <figure class="cena"><img src="assets/img/aula-13.webp" width="1280" height="720" alt="Uma professora de ciências, de jaleco, olha com calma para o notebook aberto numa janela escura, com a planta da escola impressa na mesa e um adesivo vermelho marcando uma sala."></figure>
+  <p class="promise">Você consegue abrir o <span class="gterm" data-gl="terminal" data-def="Programa de texto em que você digita comandos para o computador executar. O módulo 3 ensina a abrir e usar.">terminal</span> do Windows, digitar dois comandos e dizer em que pasta está e o que tem nela.</p>
+  <p class="why">A partir deste módulo, a IA trabalha numa pasta do seu computador. Se você não sabe em que pasta está, ela também não sabe. Muito erro que parece falha da IA é só a pasta errada.</p>
+  <div class="em1min">
+    <p class="k">Em 1 minuto</p>
+    <ol>
+      <li>O terminal do Windows se chama <b>cmd</b>: você escreve um <b>comando</b> e lê a <b>resposta</b>.</li>
+      <li><code>cd</code> sozinho diz onde você está. <code>dir</code> diz o que tem ali.</li>
+      <li>Primeiro a localização, depois os arquivos. Esses dois comandos <b>não mudam nada</b>.</li>
+    </ol>
+  </div>
+</header>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">1</span>O terminal já vem no Windows</h2>
+  <p>Você não instala nada para abrir o terminal. No Windows, ele se chama <span class="gterm" data-gl="cmd" data-def="O Prompt de Comando, terminal que já vem no Windows. Os comandos do curso, até o módulo 7, são escritos para ele.">cmd</span>. Os comandos deste curso, até o módulo 7, são escritos para ele.</p>
+  <p>Aperte a tecla Windows, digite <code>cmd</code> e tecle Enter. Abre uma janela preta com texto branco. Só no módulo 8, quando você alugar um <span class="gterm" data-gl="servidor" data-def="Computador que fica ligado o tempo todo num data center e que você acessa pela internet.">servidor</span>, aparecem os comandos do Linux, e a aula 44 mostra a tabela de troca.</p>
+  <p data-ex="professora">Lúcia apertou a tecla Windows, digitou "cmd" e teclou Enter. A janela preta abriu em dez segundos.</p>
+  <figure class="largo">
+    <div class="janela">
+      <div class="tela-top"><i></i><i></i><i></i><span>Como abrir o cmd</span></div>
+      <div class="janela-body">
+        <div class="item pasta"><span class="pin">1</span> Tecla Windows</div>
+        <div class="item doc dentro">abre o menu Iniciar com a busca</div>
+        <div class="item pasta"><span class="pin">2</span> Digite cmd</div>
+        <div class="item doc dentro">aparece "Prompt de Comando"</div>
+        <div class="item pasta"><span class="pin">3</span> Enter</div>
+        <div class="item doc dentro">abre a janela preta: é o terminal</div>
+      </div>
+    </div>
+    <ol class="passos">
+      <li><span class="pin">1</span><span>A tecla com o logotipo do Windows abre a busca.</span></li>
+      <li><span class="pin">2</span><span>O nome completo do cmd é Prompt de Comando.</span></li>
+      <li><span class="pin">3</span><span>Não precisa abrir como administrador.</span></li>
+    </ol>
+  </figure>
+  <details class="mais"><summary>Abriu o PowerShell, ou você usa Mac?</summary>
+    <p>Se a linha começa com <code>PS</code>, como <code>PS C:\Users\lucia&gt;</code>, é o PowerShell, outro terminal do Windows. Feche e procure "cmd" de novo. No Mac, o terminal se chama Terminal (Cmd+Espaço, digite "Terminal"). Nele, os comandos são os do Linux: <code>pwd</code> no lugar de <code>cd</code> sozinho e <code>ls</code> no lugar de <code>dir</code>. A tabela completa está na aula 44.</p>
+  </details>
+  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>O computador é da escola e bloqueou o cmd? Não force: faça hoje a leitura desta aula e peça acesso a quem cuida do computador. Abrir o cmd não exige senha de administrador.</p></div>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">2</span>Você escreve uma linha, ele devolve outra</h2>
+  <p>Ao abrir, o cmd mostra uma linha curta que termina em <code>&gt;</code>, com o cursor piscando. É o computador esperando o seu comando.</p>
+  <p>Você digita o comando e tecla Enter. A resposta aparece logo abaixo. Depois, o <code>&gt;</code> volta, pronto para o próximo.</p>
+  <p data-ex="coordenadora">Denise abriu o cmd pela primeira vez e esperou algo acontecer. Nada aconteceu, porque ele estava esperando por ela.</p>
+  <figure class="largo"><div class="terminal"><div class="tela-top"><i></i><i></i><i></i><span>Prompt de Comando</span></div>
+<pre><code><span class="pr">C:\Users\denise&gt;</span> cd
+<span class="out">C:\Users\denise</span>
+<span class="pr">C:\Users\denise&gt;</span> </code></pre>
+<p class="tela-nota">A linha que termina em <code>&gt;</code> é a vez de você digitar. A linha sem <code>&gt;</code> é a resposta do computador.</p></div>
+  <figcaption>Comando, resposta e o <code>&gt;</code> de volta: é sempre esse vaivém.</figcaption></figure>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">3</span><code>cd</code> sozinho é o "você está aqui"</h2>
+  <p>Sabe o mapa da escola com o adesivo "você está aqui"? O comando <code>cd</code>, digitado sem mais nada, faz esse papel. Ele responde o caminho completo da pasta em que você está agora.</p>
+  <p>Leia o caminho como endereço. Cada barra invertida <code>\</code> separa uma pasta, e a última é onde você está. A sua <span class="gterm" data-gl="pasta-pessoal" data-def="A pasta com o seu nome de usuário, onde ficam Documentos, Downloads e Imagens. No Windows: C:\Users\seu-nome.">pasta pessoal</span> é <code>C:\Users\</code> seguido do seu nome de usuário. O próprio cmd já mostra esse caminho antes do <code>&gt;</code>.</p>
+  <p data-ex="professora">Lúcia digitou <code>cd</code> e leu <code>C:\Users\lucia</code>. Então ela estava na pasta pessoal, a mesma que tem Documentos e Downloads.</p>
+  <figure class="largo"><div class="terminal"><div class="tela-top"><i></i><i></i><i></i><span>Prompt de Comando</span></div>
+<pre><code><span class="pr">C:\Users\lucia&gt;</span> cd
+<span class="out">C:\Users\lucia</span></code></pre>
+<p class="tela-nota">Uma linha só: a pasta pessoal de Lúcia. Nada foi criado nem apagado.</p></div>
+  <figcaption>O <code>cd</code> sozinho só informa. Use sempre que tiver dúvida de onde está.</figcaption></figure>
+</section>
+
+<section class="step" data-kind="fundamento">
+  <h2><span class="n">4</span><code>dir</code> mostra o que tem na pasta</h2>
+  <p>Depois de saber onde está, veja o que tem ali. O comando <code>dir</code> lista as pastas e os arquivos do lugar atual, um por linha. Pasta aparece com <code>&lt;DIR&gt;</code> ao lado. O Windows mostra alguns nomes em inglês, como Documents e Downloads.</p>
+  <p>O <code>cd</code> seguido de um nome muda de pasta. Isso fica para a aula 16. Por enquanto, basta saber que a pasta de início importa.</p>
+  <p data-ex="coordenadora">Denise abriu o programa da próxima aula, o <span class="gterm" data-gl="codex" data-def="Agente de programação da OpenAI que trabalha numa pasta do seu computador, a partir do terminal. O curso o instala no módulo 3.">Codex</span> na pasta Downloads, num teste de um colega. Ele não enxergava o projeto dela, que estava em outra pasta. O <code>cd</code> sozinho teria mostrado isso antes.</p>
+  <figure class="largo"><div class="terminal"><div class="tela-top"><i></i><i></i><i></i><span>Prompt de Comando</span></div>
+<pre><code><span class="pr">C:\Users\denise&gt;</span> dir
+<span class="out"> O volume na unidade C não tem nome.
+ O Número de Série do Volume é 1A2B-3C4D
+
+ Pasta de C:\Users\denise
+
+10/10/2026  09:12    &lt;DIR&gt;          .
+10/10/2026  09:12    &lt;DIR&gt;          ..
+10/10/2026  09:12    &lt;DIR&gt;          Documents
+10/10/2026  09:12    &lt;DIR&gt;          Downloads
+10/10/2026  09:12    &lt;DIR&gt;          Pictures
+               0 arquivo(s)              0 bytes
+               5 pasta(s)   80.000.000.000 bytes disponíveis</span></code></pre>
+<p class="tela-nota">Pule as duas linhas do volume, o ponto e os dois pontos do começo (a própria pasta e a de cima) e o resumo do fim. O que importa é o meio: data, hora, a marca <code>&lt;DIR&gt;</code> de pasta e o nome.</p></div>
+  <figcaption>O <code>dir</code> mostra o que o programa vai enxergar se começar a trabalhar dali.</figcaption></figure>
+  <div class="quiz" data-answer="b">
+    <p class="qk">Teste-se</p>
+    <p class="q">Lúcia digitou <code>dir</code> e a pasta do projeto não apareceu na lista. O que ela confere primeiro?</p>
+    <button class="opt" data-k="a" data-fb="Nada indica que a pasta sumiu. O mais comum é estar em outro lugar.">Se a pasta foi apagada</button>
+    <button class="opt" data-k="b" data-fb="Isso. O cd sozinho mostra onde ela está; talvez a pasta do projeto esteja em outro lugar.">Onde está, com o cd</button>
+    <button class="opt" data-k="c" data-fb="Repetir o mesmo comando no mesmo lugar dá a mesma lista.">O dir de novo, devagar</button>
+    <p class="qfb" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="practice" data-mode="tarefa">
+  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+  <h3 class="ph">Pergunte ao computador onde você está</h3>
+  <p class="pgoal">Pronto quando você tiver anotado a resposta do <code>cd</code> e três nomes que o <code>dir</code> mostrou. Cerca de 8 minutos, no computador.</p>
+  <p class="psafe">Os dois comandos só leem: nada é criado, movido ou apagado. Se aparecer "não é reconhecido como um comando interno", confira a digitação: cd e dir, em minúsculas, sem espaço no meio. Colou as duas linhas juntas e o Windows avisou que o texto tem várias linhas? Clique em "Colar mesmo assim".</p>
+  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">cd
+dir</pre></div>
+  <ol class="psteps">
+    <li><label><input type="checkbox" data-ptask="1"> <span>Abra o cmd pelo caminho do quadro "Como abrir o cmd".</span></label></li>
+    <li><label><input type="checkbox" data-ptask="2"> <span>Digite <code>cd</code> e tecle Enter. Anote a linha que voltou: é a pasta em que você está.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="3"> <span>Digite <code>dir</code> e tecle Enter. Anote três nomes marcados com <code>&lt;DIR&gt;</code>, sem contar o . e o ... Documents é a pasta Documentos.</span></label></li>
+  </ol>
+  <p class="pdone">Você acabou de ler, no terminal, onde está e o que tem ali, sem mudar nada.</p>
+</section>
+
+<div class="fecho">
+  <div class="cola">
+    <p class="k">Cola da aula</p>
+    <h3>Primeiros comandos</h3>
+    <ol>
+      <li><span><b>cmd</b>o terminal do Windows: você digita uma linha, ele responde.</span></li>
+      <li><span><b>cd</b>sozinho, a pasta em que você está agora.</span></li>
+      <li><span><b>dir</b>o que tem nessa pasta.</span></li>
+    </ol>
+  </div>
+  <div class="next-action">
+    <p class="nak">Seu próximo passo</p>
+    <p class="na-win">Você já sabe perguntar ao computador onde está e o que tem ali.</p>
+    <p class="na-action">Amanhã, abra o cmd de novo e digite <code>cd</code> antes de qualquer outra coisa. Leva dez segundos e vira hábito.</p>
+    <p class="na-hook">Na próxima aula: colocar o Codex no computador pela fonte oficial, e conferir que deu certo com um comando.</p>
+  </div>
+</div>
+<!--COMP-->
+<details class="complementar">
+  <summary>Material complementar · Terminal é uma porta de entrada<small>Texto do tópico no OSWork v2, adaptado ao cmd. Não conta no tempo da aula.</small></summary>
+  <section class="comp-sec"><h3>O que é</h3><p>Terminal é a janela em que você escreve comandos para o computador. <span class="gterm" data-def="Programa que interpreta os comandos digitados no terminal." data-gl="shell">Shell</span> é o programa que interpreta esses comandos. No Windows, este curso usa o cmd até o módulo 7. No servidor do módulo 8, o shell é o <span class="gterm" data-gl="bash" data-def="Linguagem de comandos do terminal no Linux e no macOS. O curso a usa no servidor do módulo 8.">Bash</span>, do Linux. Os dois não aceitam os mesmos comandos: não cole um no outro sem conferir.</p><h3>Por que aprender</h3><p>Saber em qual ambiente você está evita erros que parecem falhas da IA. O comando cd muda a pasta atual e, sozinho, mostra a localização. Não é necessário decorar dezenas de comandos para começar.</p><h3>Conceitos-chave</h3><p>Terminal; shell; pasta atual; comando e resposta.</p><h4>Na prática</h4><p>Se você abre o Codex na pasta Downloads, ele não está automaticamente trabalhando dentro de meu-primeiro-projeto. A pasta de início precisa ser escolhida.</p><h4>✓ Faça</h4><p>No cmd, execute cd e depois dir. Leia a saída: primeiro localização, depois arquivos. Não altere nada neste passo.</p><h4>✗ Evite</h4><p>Aceitar uma conclusão sem conferir a entrada que a sustenta.</p><figure class="comp-fig"><ul><li>Abrir o terminal</li><li>Entrar na pasta</li><li>Autenticar</li><li>Pedir a tarefa</li></ul><figcaption>A ordem importa: entrar na pasta certa antes de pedir evita trabalho feito no lugar errado.</figcaption></figure></section>
+</details><!--/COMP-->
+<nav class="lnav"><a href="#aula-12">← aula anterior</a><a class="next" href="#aula-14">próxima aula →</a></nav>
+<p class="aula-pe">Aula 13 · OSWork v6.2 · INEMA.CLUB PRO</p>
+</div>
+<script type="application/json" id="cards-13">
+[
+  {"front":"O programa diz que não encontrou o arquivo do projeto. Qual comando você digita primeiro?","back":"O cd sozinho, para ver em que pasta está. Depois o dir, para ver o que tem ali."},
+  {"front":"Qual a diferença entre o que o cd sozinho responde e o que o dir responde?","back":"O cd dá o caminho da pasta atual. O dir dá a lista de pastas e arquivos que estão nela."},
+  {"front":"Como você abre o terminal no Windows?","back":"Tecla Windows, digita cmd e tecla Enter. Abre o Prompt de Comando, a janela preta."}
+]
+</script>
+</section>

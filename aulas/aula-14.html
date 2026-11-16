@@ -1,0 +1,138 @@
+<section class="view" id="v-aula-14" data-aula="14" data-tempo="15min">
+<div class="aula">
+<header class="a-hero">
+  <p class="kicker">Módulo 3 · Aula 2 de 6</p>
+  <h1>Programa novo vem da <em>fonte oficial</em></h1>
+  <figure class="cena"><img src="assets/img/aula-14.webp" width="1280" height="720" alt="Uma coordenadora de óculos confere com o dedo a fita de lacre de uma caixa entregue na secretaria, antes de abrir, com o notebook aberto ao lado."></figure>
+  <p class="promise">Você consegue <span class="gterm" data-gl="instalar" data-def="Colocar um programa no computador para que ele possa ser usado. O módulo 3 faz a primeira instalação, pela fonte oficial.">instalar</span> o <span class="gterm" data-gl="codex" data-def="Agente de programação da OpenAI que trabalha numa pasta do seu computador, a partir do terminal. O curso o instala no módulo 3.">Codex</span> pelo endereço oficial e confirmar, com um comando, que o computador o reconhece.</p>
+  <p class="why">Na internet circulam comandos "mais rápidos" para colocar programas no computador. Um comando colado sem conferir pode executar qualquer coisa. Conferir a fonte leva um minuto e evita esse risco.</p>
+  <div class="em1min">
+    <p class="k">Em 1 minuto</p>
+    <ol>
+      <li>Colocar o programa, entrar com a conta e abrir na pasta são <b>três etapas</b> diferentes.</li>
+      <li>O comando vem da <b>página oficial</b>. Confira o endereço antes de colar.</li>
+      <li><code>codex --version</code> confirma que deu certo.</li>
+    </ol>
+  </div>
+</header>
+
+<section class="step" data-kind="ferramenta">
+  <h2><span class="n">1</span>Três etapas, uma de cada vez</h2>
+  <p>Instalar põe o programa no computador. Isso não conecta a sua conta nem escolhe a pasta de trabalho. Cada coisa tem a sua etapa e a sua conferência.</p>
+  <p>Esta aula faz só a primeira. As outras duas vêm nas aulas 15 e 16.</p>
+  <p data-ex="professora">Logo depois de instalar, Lúcia digitou <code>codex</code> e o programa pediu para ela entrar com a conta. Achou que era defeito. Não era: a primeira etapa tinha dado certo, e faltava a segunda.</p>
+  <figure class="largo">
+    <div class="janela">
+      <div class="tela-top"><i></i><i></i><i></i><span>Do zero ao primeiro pedido</span></div>
+      <div class="janela-body">
+        <div class="item doc"><span class="pin">1</span> Colocar o programa no computador · esta aula</div>
+        <div class="item doc"><span class="pin">2</span> Entrar com a sua conta · aula 15</div>
+        <div class="item doc"><span class="pin">3</span> Abrir na pasta do projeto · aula 16</div>
+      </div>
+    </div>
+    <ol class="passos">
+      <li><span class="pin">1</span><span>Confere com <code>codex --version</code>.</span></li>
+      <li><span class="pin">2</span><span>Tem a sua própria conferência, na aula 15.</span></li>
+      <li><span class="pin">3</span><span>Confere com o <code>cd</code> sozinho, da aula 13.</span></li>
+    </ol>
+  </figure>
+</section>
+
+<section class="step" data-kind="ferramenta">
+  <h2><span class="n">2</span>Confira o lacre antes de abrir a caixa</h2>
+  <p>Quando chega uma caixa na secretaria, você olha o lacre e o remetente antes de abrir. Com um comando é igual: o remetente é o nome do programa que ele pede.</p>
+  <p>No Windows, quem instala é o <span class="gterm" data-gl="winget" data-def="Instalador de programas que já vem no Windows 10 e 11. Você digita no cmd o nome oficial do programa e ele baixa e instala.">winget</span>, que já vem no sistema. Primeiro ele põe o <span class="gterm" data-gl="node" data-def="Node.js: programa que roda ferramentas escritas em JavaScript, como o Codex. Vem junto com o npm.">Node.js</span>. Depois, o <span class="gterm" data-gl="npm" data-def="O instalador de pacotes que vem com o Node.js. O Codex é publicado nele com o nome @openai/codex.">npm</span>, que vem com o Node.js, baixa o Codex pelo nome oficial <code>@openai/codex</code>. Comando de página desconhecida não se cola.</p>
+  <p data-ex="coordenadora">Denise recebeu num grupo um "jeito mais rápido" de pôr o Codex no computador. O nome no meio do comando não era <code>@openai/codex</code>. Ela não colou e usou o da página oficial.</p>
+  <figure class="largo">
+    <div class="lado">
+      <div class="antes"><span class="rot">✗ Mensagem do grupo</span><p><b>Nome no comando:</b> um pacote com "codex" no nome, mas sem o <code>@openai/</code> na frente.</p><p><b>Quem garante:</b> ninguém.</p></div>
+      <div class="depois"><span class="rot">✓ Página oficial</span><p><b>Nome no comando:</b> <code>@openai/codex</code></p><p><b>Quem garante:</b> a empresa que faz o programa, na página de instalação.</p></div>
+    </div>
+    <figcaption>Leia o nome dentro do comando, não só o título da mensagem.</figcaption>
+  </figure>
+</section>
+
+<section class="step" data-kind="ferramenta">
+  <h2><span class="n">3</span>Cole os dois comandos e espere cada um terminar</h2>
+  <p>Abra o <span class="gterm" data-gl="cmd" data-def="O Prompt de Comando, terminal que já vem no Windows. Os comandos do curso, até o módulo 7, são escritos para ele.">cmd</span> e cole um comando de cada vez. O primeiro instala o Node.js; o segundo, o Codex. Use o botão copiar. Entre os dois, feche o cmd e abra de novo: só a janela nova enxerga o programa que acabou de chegar.</p>
+  <p>Na primeira vez, o winget pode perguntar se você aceita os termos da loja. Digite Y e tecle Enter. As linhas que passam você não precisa entender. Espere o <code>&gt;</code> voltar. Quem confirma se deu certo é o passo 4.</p>
+  <p data-ex="professora">Lúcia colou o primeiro comando e esperou a mensagem "Instalado com êxito". Fechou o cmd, abriu outro e colou o segundo.</p>
+  <figure class="largo"><div class="terminal"><div class="tela-top"><i></i><i></i><i></i><span>Prompt de Comando</span></div>
+<pre><code><span class="pr">C:\Users\lucia&gt;</span> winget install -e --id OpenJS.NodeJS.LTS
+<span class="out">Instalado com êxito</span>
+<span class="pr">C:\Users\lucia&gt;</span> <span class="out">rem fechou o cmd e abriu outro</span>
+<span class="pr">C:\Users\lucia&gt;</span> npm install -g @openai/codex
+<span class="out">added 1 package in 9s</span></code></pre>
+<p class="tela-nota">O <code>-e --id</code> pede o nome exato, sem adivinhar. O <code>-g</code> do npm instala para o computador todo, não só numa pasta.</p></div>
+  <figcaption>Os dois nomes são o lacre: OpenJS.NodeJS.LTS e @openai/codex.</figcaption></figure>
+</section>
+
+<section class="step" data-kind="ferramenta">
+  <h2><span class="n">4</span><code>codex --version</code> confirma</h2>
+  <p>Para saber se deu certo, peça a versão. Se o computador reconhece o programa, ele responde com um número.</p>
+  <p>Se aparecer "não é reconhecido como um comando interno ou externo", o cmd ainda não achou o programa. Feche o cmd, abra de novo e repita.</p>
+  <p data-ex="coordenadora">No notebook de Denise, a primeira tentativa deu "não é reconhecido". Ela fechou o cmd, abriu outro e digitou de novo. Veio o número da versão.</p>
+  <figure class="largo"><div class="terminal"><div class="tela-top"><i></i><i></i><i></i><span>Prompt de Comando</span></div>
+<pre><code><span class="pr">C:\Users\denise&gt;</span> codex --version
+<span class="out">'codex' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.</span>
+<span class="pr">C:\Users\denise&gt;</span> <span class="out">rem fechou e abriu o cmd de novo</span>
+<span class="pr">C:\Users\denise&gt;</span> codex --version
+<span class="out">codex-cli 0.156.1</span></code></pre>
+<p class="tela-nota">"Não é reconhecido" quer dizer "não achei esse programa". Depois de reabrir, veio a versão. O número muda com o tempo.</p></div>
+  <figcaption>Qualquer número de versão na resposta quer dizer: está no computador e o cmd o encontra.</figcaption></figure>
+  <div class="calma"><p><span class="k">Se travou aqui, é normal</span>"Não é reconhecido" logo depois de instalar é comum: o cmd aberto antes não sabe do programa novo. Feche, abra de novo e repita o <code>codex --version</code>. O npm também não é reconhecido? O Node.js não terminou de instalar: repita o primeiro comando. Continuou? Copie a mensagem de erro, sem senha nenhuma, e leve para quem cuida do computador.</p></div>
+</section>
+
+<section class="practice" data-mode="tarefa">
+  <p class="pk">Pratique agora <span class="pcount">0/3</span></p>
+  <h3 class="ph">Coloque o Codex no computador e confira a versão</h3>
+  <p class="pgoal">Pronto quando <code>codex --version</code> responder com um número. Cerca de 10 minutos, no computador, com internet.</p>
+  <p class="psafe">Os comandos só valem se os nomes forem iguais aos da página oficial: OpenJS.NodeJS.LTS e @openai/codex. Se o Windows perguntar se o programa pode fazer alterações e o computador é seu, clique em Sim. Se o computador é da escola, pare e fale com quem cuida dele.</p>
+  <p><b>Passo 2 · cole no cmd</b></p>
+  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">winget install -e --id OpenJS.NodeJS.LTS</pre></div>
+  <p><b>Passo 3 · feche, abra outro cmd e cole</b></p>
+  <div class="pcodewrap"><button class="pcopy" type="button">copiar</button><pre class="pcode">npm install -g @openai/codex
+codex --version</pre></div>
+  <ol class="psteps">
+    <li><label><input type="checkbox" data-ptask="1"> <span>Abra a <a href="https://learn.chatgpt.com/docs/codex/cli" target="_blank" rel="noopener">página oficial do Codex</a>. Procure a parte de instalação (em inglês, "Install"). Confira que o nome do pacote é <code>@openai/codex</code>, o mesmo do passo 3.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="2"> <span>Copie o bloco do passo 2, cole no cmd, tecle Enter e espere "Instalado com êxito". Pediu para aceitar termos? Digite Y e Enter.</span></label></li>
+    <li><label><input type="checkbox" data-ptask="3"> <span>Feche e reabra o cmd. Cole o bloco do passo 3 e anote o número que voltar. "Não é reconhecido" duas vezes? Copie a mensagem e leve para quem cuida do computador.</span></label></li>
+  </ol>
+  <p class="pdone">Você acabou de pôr um programa no computador pela fonte oficial e de conferir que ele está lá.</p>
+</section>
+
+<div class="fecho">
+  <div class="cola">
+    <p class="k">Cola da aula</p>
+    <h3>Pela fonte oficial</h3>
+    <ol>
+      <li><span><b>Três etapas</b>colocar o programa, entrar com a conta, abrir na pasta.</span></li>
+      <li><span><b>Nome oficial</b>confira OpenJS.NodeJS.LTS e @openai/codex antes de colar.</span></li>
+      <li><span><b>Versão</b>um número na resposta quer dizer que deu certo.</span></li>
+    </ol>
+  </div>
+  <div class="next-action">
+    <p class="nak">Seu próximo passo</p>
+    <p class="na-win">Você já sabe pôr um programa no computador sem colar comando de origem duvidosa.</p>
+    <p class="na-action">Na <span class="gterm" data-gl="ficha-do-projeto" data-def="Documento curto em que você anota como um trabalho com IA funciona: ferramentas, acesso, decisões e pendências. Pode ser uma nota no celular. No módulo 4 ele vira um arquivo da pasta do projeto.">ficha do projeto</span>, anote numa linha: "Codex · versão &lt;o número&gt; · fonte: página oficial". Leva um minuto.</p>
+    <p class="na-hook">Na próxima aula: o programa está no computador, mas ainda não sabe quem você é. Você vai entrar com a sua conta sem deixar nenhuma senha à mostra.</p>
+  </div>
+</div>
+<!--COMP-->
+<details class="complementar">
+  <summary>Material complementar · Instale pela fonte oficial<small>Texto do tópico no OSWork v2, adaptado ao cmd. Não conta no tempo da aula.</small></summary>
+  <section class="comp-sec"><h3>O que é</h3><p>A página oficial do Codex indica o pacote <code>@openai/codex</code>, instalado pelo npm, que vem com o Node.js. Instalar significa adicionar o programa à máquina. Leia a fonte, confira o nome do pacote e use sua própria conta. Não execute comandos recebidos de páginas desconhecidas.</p><h3>Por que aprender</h3><p><span class="gterm" data-def="Colocar um programa no computador para que ele possa ser usado. O módulo 3 faz a primeira instalação, pela fonte oficial." data-gl="instalar">Instalação</span>, <span class="gterm" data-def="Entrar numa ferramenta com a sua conta, como a conta do ChatGPT. Os direitos e limites vêm do plano dessa conta." data-gl="login">login</span> e execução são etapas diferentes. Um programa <span class="gterm" data-def="Colocar um programa no computador para que ele possa ser usado. O módulo 3 faz a primeira instalação, pela fonte oficial." data-gl="instalar">instalado</span> ainda precisa de autenticação. Um login concluído não significa que você abriu a pasta correta.</p><h3>Conceitos-chave</h3><p>Fonte oficial; instalação; versão; diagnóstico.</p><h4>Na prática</h4><p>Depois da instalação, codex --version informa a versão reconhecida pelo cmd. Se aparecer "não é reconhecido como um comando interno ou externo", feche e abra o cmd. Persistindo, confira se node --version e npm --version respondem.</p><h4>Experimente agora</h4><p>No cmd: winget install -e --id OpenJS.NodeJS.LTS; feche e abra o cmd; npm install -g @openai/codex. Depois verifique com codex --version.</p></section>
+</details>
+<!--/COMP-->
+<nav class="lnav"><a href="#aula-13">← aula anterior</a><a class="next" href="#aula-15">próxima aula →</a></nav>
+<p class="aula-pe">Aula 14 · OSWork v6.2 · INEMA.CLUB PRO</p>
+</div>
+<script type="application/json" id="cards-14">
+[
+  {"front":"Um colega manda um comando para pôr o Codex no computador, diferente do da página. O que você confere antes de colar?","back":"O nome do pacote dentro do comando. Se não for @openai/codex, da página oficial, não cole."},
+  {"front":"O codex --version respondeu \"não é reconhecido\" logo depois de terminar. O que você faz primeiro?","back":"Fecha e reabre o cmd e repete. Se continuar, confere se o npm --version responde."},
+  {"front":"O programa pede para você entrar com a conta. Isso quer dizer que a etapa de hoje falhou?","back":"Não. Colocar o programa e entrar com a conta são etapas diferentes; a segunda vem na aula seguinte."}
+]
+</script>
+</section>

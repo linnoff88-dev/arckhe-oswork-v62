@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<!-- LANDING formato-curso v6 — usa assets/aula.css (mesmos tokens, tema papel).
+     A lista de aulas entre os marcadores AULAS é preenchida pelo montar-curso.py. Troque os [ ]. -->
+<html data-theme="papel" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>OSWork v6.2 — Tu IA necesita un sistema · INEMA.CLUB PRO</title>
+<meta content="Del chat a tu entorno de agentes en lecciones de unos 15 minutos: modelos, archivos, instrucciones, Codex, Git, bot y servidor, con el material completo de cada tema." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/aula.css" rel="stylesheet"/>
+<style>
+  .l-hero{padding:32px 0 8px}
+  .l-hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(38px,7vw,64px);line-height:1.04;letter-spacing:-.02em;margin:0 0 16px;max-width:16ch}
+  .l-hero h1 em{font-style:italic;color:var(--accent)}
+  .l-hero .lead{font-size:clamp(18px,2.3vw,22px);color:var(--ink-soft);max-width:36rem;margin:0 0 22px}
+  .l-sub{color:var(--muted);font-size:15px;margin:12px 0 0}
+  .l-sec{padding:28px 0}
+  .l-sec h2{font-family:var(--serif);font-weight:500;font-size:clamp(26px,4vw,34px);margin:0 0 14px}
+  .res{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+  .res div{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px;font-size:17px}
+  .res b{display:block;margin-bottom:4px}
+  .pq{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .pq div{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+  .pq h3{font-size:16px;margin:0 0 8px;color:var(--accent)} .pq .nao h3{color:var(--muted)}
+  .pq ul{margin:0;padding-left:20px;font-size:16px}
+  @media(max-width:640px){.pq{grid-template-columns:1fr}}
+</style>
+<link data-nome="Português" href="../landing.html" hreflang="pt-BR" rel="alternate"/><link data-nome="English" href="../en/landing.html" hreflang="en" rel="alternate"/><link data-nome="Español" href="landing.html" hreflang="es" rel="alternate"/></head>
+<body>
+<header class="bar"><div class="bar-inner">
+<span class="brand"><a class="mark" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a><a class="pro" href="https://inema.pro" rel="noopener" target="_blank">PRO</a><span class="course">OSWork v6.2</span></span>
+<a class="btn landing-cta" href="curso.html#trilha">entrar al curso</a><nav aria-label="Idioma" class="langs"><a href="../landing.html">PT</a><a href="../en/landing.html">EN</a><a aria-current="true" href="landing.html">ES</a></nav>
+</div></header>
+<main class="wrap">
+<section class="l-hero">
+<p class="kicker">OSWork v6.2 · IA como sistema de trabajo</p>
+<h1>Tu IA necesita un <em>sistema</em></h1>
+<p class="lead">Del chat a tu entorno de agentes. Tú organizas archivos, enseñas procedimientos a la IA y montas rutinas que puedes verificar, una lección corta a la vez.</p>
+<a class="big" href="curso.html#trilha">empezar ahora →</a>
+<p class="l-sub"><a href="videos/">▶ Mira las video clases con Nei, una por módulo</a></p>
+<p class="l-sub">8 módulos · lecciones de ~15 minutos · material completo de cada tema al final de la lección · módulo 1 disponible</p>
+<figure class="cena" style="margin-top:24px"><img alt="Una coordinadora y una profesora comparten una mesa de trabajo ordenada, con notebook, carpetas y herramientas, como en un taller." height="720" src="../assets/img/trilha.webp" width="1280"/></figure>
+</section>
+<section class="l-sec">
+<h2>Lo que haces y sales caminando</h2>
+<div class="res">
+<div><b>Elegir el modelo según la tarea</b>con una regla de calidad escrita antes del pedido.</div>
+<div><b>Montar tu banco de trabajo</b>carpetas, instrucciones, Skills y memoria que la IA lee en todo el proyecto.</div>
+<div><b>Operar con seguridad</b>Codex, Git, un bot en Telegram y un servicio supervisado en una VPS.</div>
+</div>
+</section>
+<section class="l-sec">
+<h2>Para quién es</h2>
+<div class="pq">
+<div class="sim"><h3>Es para ti si</h3><ul><li>Ya usas un chat de IA en el trabajo y quieres ir más allá de la conversación suelta.</li><li>¿Quieres aprender la parte técnica —terminal, Git, servidor— explicado paso a paso.</li><li>Prefieres aprender haciendo, en una carpeta de práctica.</li></ul></div>
+<div class="nao"><h3>No es para ti si</h3><ul><li>Solo quieres tips rápidos para el pedido, sin tocar archivos (mira OSWork v6).</li><li>¿Quieres videolecciones tradicionales.</li></ul></div>
+</div>
+</section>
+<section class="l-sec">
+<h2>Las lecciones</h2>
+<div class="aulas">
+<!--AULAS-->
+<div class="mods-lp" id="modulos">
+<details class="mod-lp" id="modulo-1">
+<summary><h3 class="mod-t">Módulo 1 · Modelos: elige según la tarea</h3><div class="mod-r">Comparar modelos con una tarea real y un criterio de calidad.</div><div class="mod-m">6 lecciones · 86 min</div></summary>
+<div class="aulas">
+<a class="au" data-aula="1" href="curso.html#aula-1">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-1.webp" width="96"/>
+<div><span class="n">Lección 1</span><h3>El modelo es una pieza, no el sistema</h3><p class="meta">13 min</p></div>
+</a>
+<a class="au" data-aula="2" href="curso.html#aula-2">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-2.webp" width="96"/>
+<div><span class="n">Lección 2</span><h3>Separa por función antes de comparar nombres</h3><p class="meta">14 min</p></div>
+</a>
+<a class="au" data-aula="3" href="curso.html#aula-3">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-3.webp" width="96"/>
+<div><span class="n">Lección 3</span><h3>Modelo y esfuerzo son dos controles</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="4" href="curso.html#aula-4">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-4.webp" width="96"/>
+<div><span class="n">Lección 4</span><h3>Una regla convierte la opinión en observación</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="5" href="curso.html#aula-5">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-5.webp" width="96"/>
+<div><span class="n">Lección 5</span><h3>La suscripción y la clave de acceso son cuentas diferentes</h3><p class="meta">14 min</p></div>
+</a>
+<a class="au" data-aula="6" href="curso.html#aula-6">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-6.webp" width="96"/>
+<div><span class="n">Lección 6</span><h3>La autonomía es autorización con alcance</h3><p class="meta">15 min</p></div>
+</a>
+</div>
+</details>
+<details class="mod-lp" id="modulo-2">
+<summary><h3 class="mod-t">Módulo 2 · Chat, Work y Desktop</h3><div class="mod-r">Redactar una orden de trabajo con entradas, salida y revisión.</div><div class="mod-m">6 lecciones · 81 min</div></summary>
+<div class="aulas">
+<a class="au" data-aula="7" href="curso.html#aula-7">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-7.webp" width="96"/>
+<div><span class="n">Lección 7</span><h3>Una pregunta pequeña cabe en el chat</h3><p class="meta">12 min</p></div>
+</a>
+<a class="au" data-aula="8" href="curso.html#aula-8">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-8.webp" width="96"/>
+<div><span class="n">Lección 8</span><h3>Una tarea grande se vuelve encargo</h3><p class="meta">14 min</p></div>
+</a>
+<a class="au" data-aula="9" href="curso.html#aula-9">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-9.webp" width="96"/>
+<div><span class="n">Lección 9</span><h3>Un archivo cerca no es un archivo leído</h3><p class="meta">14 min</p></div>
+</a>
+<a class="au" data-aula="10" href="curso.html#aula-10">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-10.webp" width="96"/>
+<div><span class="n">Lección 10</span><h3>Saber dónde ocurre el trabajo</h3><p class="meta">12 min</p></div>
+</a>
+<a class="au" data-aula="11" href="curso.html#aula-11">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-11.webp" width="96"/>
+<div><span class="n">Lección 11</span><h3>El pedido se convierte en contrato de entrega</h3><p class="meta">14 min</p></div>
+</a>
+<a class="au" data-aula="12" href="curso.html#aula-12">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-12.webp" width="96"/>
+<div><span class="n">Lección 12</span><h3>Listo es después de la revisión</h3><p class="meta">15 min</p></div>
+</a>
+</div>
+</details>
+<details class="mod-lp" id="modulo-3">
+<summary><h3 class="mod-t">Módulo 3 · Terminal y Codex en la práctica</h3><div class="mod-r">Abre un proyecto de entrenamiento en Codex y produce una modificación verificable.</div><div class="mod-m">6 lecciones · 86 min</div></summary>
+<div class="aulas">
+<a class="au" data-aula="13" href="curso.html#aula-13">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-13.webp" width="96"/>
+<div><span class="n">Lección 13</span><h3>El terminal empieza diciendo dónde estás</h3><p class="meta">13 min</p></div>
+</a>
+<a class="au" data-aula="14" href="curso.html#aula-14">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-14.webp" width="96"/>
+<div><span class="n">Lección 14</span><h3>Un programa nuevo viene de la fuente oficial</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="15" href="curso.html#aula-15">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-15.webp" width="96"/>
+<div><span class="n">Lección 15</span><h3>Entra con la cuenta sin mostrar la clave</h3><p class="meta">13 min</p></div>
+</a>
+<a class="au" data-aula="16" href="curso.html#aula-16">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-16.webp" width="96"/>
+<div><span class="n">Lección 16</span><h3>Abre el agente en la carpeta correcta</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="17" href="curso.html#aula-17">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-17.webp" width="96"/>
+<div><span class="n">Lección 17</span><h3>Primero el agente lee , luego él cambia</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="18" href="curso.html#aula-18">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-18.webp" width="96"/>
+<div><span class="n">Lección 18</span><h3>Permiso pequeño y un punto de vuelta</h3><p class="meta">15 min</p></div>
+</a>
+</div>
+</details>
+<details class="mod-lp" id="modulo-4">
+<summary><h3 class="mod-t">Módulo 4 · Carpetas, Markdown y secretos</h3><div class="mod-r">Construye la casa digital y separa conocimiento de credenciales.</div><div class="mod-m">6 lecciones · 83 min</div></summary>
+<div class="aulas">
+<a class="au" data-aula="19" href="curso.html#aula-19">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-19.webp" width="96"/>
+<div><span class="n">Lección 19</span><h3>Una carpeta representa un contexto</h3><p class="meta">13 min</p></div>
+</a>
+<a class="au" data-aula="20" href="curso.html#aula-20">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-20.webp" width="96"/>
+<div><span class="n">Lección 20</span><h3>Markdown es texto organizado</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="21" href="curso.html#aula-21">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-21.webp" width="96"/>
+<div><span class="n">Lección 21</span><h3>Cada archivo tiene un trabajo</h3><p class="meta">14 min</p></div>
+</a>
+<a class="au" data-aula="22" href="curso.html#aula-22">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-22.webp" width="96"/>
+<div><span class="n">Lección 22</span><h3>El secreto no es conocimiento para compartir</h3><p class="meta">13 min</p></div>
+</a>
+<a class="au" data-aula="23" href="curso.html#aula-23">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-23.webp" width="96"/>
+<div><span class="n">Lección 23</span><h3>Ignora antes del primer commit</h3><p class="meta">13 min</p></div>
+</a>
+<a class="au" data-aula="24" href="curso.html#aula-24">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-24.webp" width="96"/>
+<div><span class="n">Lección 24</span><h3>Haz una limpieza de contexto</h3><p class="meta">15 min</p></div>
+</a>
+</div>
+</details>
+<details class="mod-lp" id="modulo-5">
+<summary><h3 class="mod-t">Módulo 5 · AGENTS, Skills y memoria</h3><div class="mod-r">Crear instrucciones de proyecto y una capacidad reutilizable con criterio de revisión.</div><div class="mod-m">6 lecciones · 90 min</div></summary>
+<div class="aulas">
+<a class="au" data-aula="25" href="curso.html#aula-25">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-25.webp" width="96"/>
+<div><span class="n">Lección 25</span><h3>Una buena regla es una regla que puedes revisar</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="26" href="curso.html#aula-26">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-26.webp" width="96"/>
+<div><span class="n">Lección 26</span><h3>El reglamento vale en la escuela; el acuerdo vale en el aula</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="27" href="curso.html#aula-27">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-27.webp" width="96"/>
+<div><span class="n">Lección 27</span><h3>La regla se queda en la puerta; la guía, en la carpeta</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="28" href="curso.html#aula-28">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-28.webp" width="96"/>
+<div><span class="n">Lección 28</span><h3>La memoria es un mural con fecha y con responsable</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="29" href="curso.html#aula-29">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-29.webp" width="96"/>
+<div><span class="n">Lección 29</span><h3>Después del resbalón, la cinta en el escalón</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="30" href="curso.html#aula-30">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-30.webp" width="96"/>
+<div><span class="n">Lección 30</span><h3>Ensaya la Skill antes del día real</h3><p class="meta">15 min</p></div>
+</a>
+</div>
+</details>
+<details class="mod-lp" id="modulo-6">
+<summary><h3 class="mod-t">Módulo 6 · Git e GitHub sin perder trabajo</h3><div class="mod-r">Guardar una versión, inspeccionar diferencias y recuperar un cambio de entrenamiento.</div><div class="mod-m">7 lecciones · 103 min</div></summary>
+<div class="aulas">
+<a class="au" data-aula="31" href="curso.html#aula-31">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-31.webp" width="96"/>
+<div><span class="n">Lección 31</span><h3>El historial que guarda cada versión de la carpeta</h3><p class="meta">14 min</p></div>
+</a>
+<a class="au" data-aula="32" href="curso.html#aula-32">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-32.webp" width="96"/>
+<div><span class="n">Lección 32</span><h3>Revisa lo que va a entrar antes de guardar</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="33" href="curso.html#aula-33">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-33.webp" width="96"/>
+<div><span class="n">Lección 33</span><h3>Una versión guardada con nombre y motivo</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="34" href="curso.html#aula-34">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-34.webp" width="96"/>
+<div><span class="n">Lección 34</span><h3>Copia un proyecto y actualízalo con cuidado</h3><p class="meta">14 min</p></div>
+</a>
+<a class="au" data-aula="35" href="curso.html#aula-35">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-35.webp" width="96"/>
+<div><span class="n">Lección 35</span><h3>Deshaz un error sin eliminar la página</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="36" href="curso.html#aula-36">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-36.webp" width="96"/>
+<div><span class="n">Lección 36</span><h3>Enviar es otro paso: revisa antes</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="49" href="curso.html#aula-49">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-49.webp" width="96"/>
+<div><span class="n">Lección 49</span><h3>Clave en el llavero, página publicada</h3><p class="meta">15 min</p></div>
+</a>
+</div>
+</details>
+<details class="mod-lp" id="modulo-7">
+<summary><h3 class="mod-t">Módulo 7 · Telegram como interfaz de trabajo</h3><div class="mod-r">Ejecute un bot restringido de consulta y entienda dónde entra la IA.</div><div class="mod-m">6 lecciones · 89 min</div></summary>
+<div class="aulas">
+<a class="au" data-aula="37" href="curso.html#aula-37">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-37.webp" width="96"/>
+<div><span class="n">Lección 37</span><h3>Telegram es la puerta, no quien trabaja</h3><p class="meta">13 min</p></div>
+</a>
+<a class="au" data-aula="38" href="curso.html#aula-38">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-38.webp" width="96"/>
+<div><span class="n">Lección 38</span><h3>Crea el bot y guarda su clave</h3><p class="meta">17 min</p></div>
+</a>
+<a class="au" data-aula="39" href="curso.html#aula-39">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-39.webp" width="96"/>
+<div><span class="n">Lección 39</span><h3>El bot verifica el documento, no el nombre</h3><p class="meta">13 min</p></div>
+</a>
+<a class="au" data-aula="40" href="curso.html#aula-40">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-40.webp" width="96"/>
+<div><span class="n">Lección 40</span><h3>El bot va al rincón y espera</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="41" href="curso.html#aula-41">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-41.webp" width="96"/>
+<div><span class="n">Lección 41</span><h3>La IA escribe el dictamen; la nota es del programa</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="42" href="curso.html#aula-42">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-42.webp" width="96"/>
+<div><span class="n">Lección 42</span><h3>Pasa el sonido antes de la reunión</h3><p class="meta">16 min</p></div>
+</a>
+</div>
+</details>
+<details class="mod-lp" id="modulo-8">
+<summary><h3 class="mod-t">Módulo 8 · VPS desde cero y operación 24/7</h3><div class="mod-r">Prepare un plan de despliegue, supervisión, respaldo y verificación del servicio.</div><div class="mod-m">6 lecciones · 92 min</div></summary>
+<div class="aulas">
+<a class="au" data-aula="43" href="curso.html#aula-43">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-43.webp" width="96"/>
+<div><span class="n">Lección 43</span><h3>Una VPS es una sala alquilada: quien cuida eres tú</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="44" href="curso.html#aula-44">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-44.webp" width="96"/>
+<div><span class="n">Lección 44</span><h3>No devuelvas la clave vieja antes de probar la nueva</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="45" href="curso.html#aula-45">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-45.webp" width="96"/>
+<div><span class="n">Lección 45</span><h3>Maleta de mano: solo lo que pide el viaje</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="46" href="curso.html#aula-46">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-46.webp" width="96"/>
+<div><span class="n">Lección 46</span><h3>La portería de la VPS: entra quien entra, sale quien sale</h3><p class="meta">15 min</p></div>
+</a>
+<a class="au" data-aula="47" href="curso.html#aula-47">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-47.webp" width="96"/>
+<div><span class="n">Lección 47</span><h3>El portero del bot: conecta, reconecta y anota</h3><p class="meta">16 min</p></div>
+</a>
+<a class="au" data-aula="48" href="curso.html#aula-48">
+<img alt="" class="thumb" height="72" loading="lazy" src="../assets/img/aula-48.webp" width="96"/>
+<div><span class="n">Lección 48</span><h3>Simulacro de incendio: solo vale lo que se ensayó</h3><p class="meta">16 min</p></div>
+</a>
+</div>
+</details>
+</div>
+<script>(function(){function abre(){var d=location.hash&&document.getElementById(location.hash.slice(1));if(d&&d.tagName==="DETAILS"){d.open=true;d.scrollIntoView();}}abre();addEventListener("hashchange",abre);})();</script>
+<!--/AULAS-->
+</div>
+<p><a class="big" href="curso.html#trilha">comenzar por la lección 1 →</a></p>
+</section>
+</main>
+<footer class="pe">OSWork v6.2 · INEMA.CLUB PRO
+  <!-- inema-backlink:v1 -->
+<p style="display:block;width:100%;text-align:center;font-size:.85rem;margin:.75rem 0 0;opacity:.85"><a href="https://www.inema.club/cursos/288-oswork-v6-2-sua-ia-precisa-de-um-sistema/" style="color:inherit;text-decoration:underline">Ficha completa de este curso en INEMA.CLUB</a> · <a href="https://www.inema.club/aprender-inteligencia-artificial/" style="color:inherit;text-decoration:underline">Guía: cómo aprender inteligencia artificial</a> · <a href="https://www.inema.club/cursos/" style="color:inherit;text-decoration:underline">Todos los cursos</a></p>
+<!-- /inema-backlink:v1 -->
+</footer>
+</body>
+</html>
